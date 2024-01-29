@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    body{
+        display: flex;
+        margin: 50px auto;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .containter{
+        position: relative;
+        width: 100%;
+    }
+    .card{
+        background-color: rgba(0, 255, 255, 0.201);
+        border-radius: 20px;
+        display: flex;
+        width: 100%;
+    }
+    ul{
+        display: flex;
+        width: 100%;
+        
+    }
+ul>li {
+ 
+    padding: 20px;
+    white-space: nowrap;
+    margin: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    list-style-type: none;
+}
+ul>li{
+    border: none;
+}
+ul>li.show{
+    border-top: 1px solid rgba(23, 23, 22, 0.099) ;
+    border-right: 1px solid rgba(23, 23, 22, 0.139);
+    border-left: 1px solid rgba(23, 23, 22, 0.139);
+}
+
+.title-card{
+    opacity: 0;
+    position: absolute;
+ width: 100%;
+    transition: all .5s ease-in;
+    height: 30vh;
+    background-color: rgba(187, 190, 134, 0.396);
+}
+.active{
+    opacity: 1;
+    
+   display: flex;
+}
+</style>
+    <title>Document</title>
+</head>
+<body dir="rtl">
+    <div class="containter">
+    <div class="card">
+            <ul class="d-flex " data-target="true">
+                <li value="1">مشخصات</li>
+                
+                <li value="2">دیدگاه</li>
+               
+                <li value="3" >بررسی تخصصی</li>
+                
+                <li value="4" >نظرات</li>
+                
+            </ul>
+        </div>
+    
+    <div data-cont="1" class="title-card ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</div>
+    <div data-cont="2" class="title-card">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز</div>
+    <div data-cont="3" class="title-card">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Egestas purus viverra accumsan in nisl nisi Arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque In egestas erat imperdiet sed euismod nisi porta lorem mollis</div>
+    <div data-cont="4" class="title-card">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Egestas purus viverra accumsan in nisl nisi Arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque In egestas erat imperdiet sed euismod nisi porta lorem mollis Morbi tristique senectus et netus</div>
+</div>
+</body>
+
+    <script src="js/file6.js"></script>
+</html>

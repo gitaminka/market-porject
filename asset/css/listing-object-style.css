@@ -1,0 +1,344 @@
+
+.object-box .object-item a{
+    text-decoration: none;
+}
+.object-box .object-item > img {
+    width: 90%;
+    height: auto;
+    align-self: center;
+    flex: 0 0 90%;
+    margin:20px auto;
+}
+.object-box .object-item > h2{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.object-item .header-object-item  div:nth-child(1){
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    left:5px;
+    top:20px;
+    
+}
+.object-item .header-object-item  div:nth-child(2){
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(138, 14, 14);
+    border-radius: 50%;
+    left:5px;
+    top:35px;
+    
+}
+.object-item .header-object-item  div:nth-child(3){
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(136, 135, 133);
+    border-radius: 50%;
+    left:5px;
+    top:50px;
+    
+}
+.object-box{border: 1px solid var(--border);}
+
+.object-box .object-item{
+    display: flex;
+   
+ flex-direction: column;
+}
+
+.object-item .title-object-item{
+    text-align: right;
+    align-self: flex-start;
+    padding: 2px 0;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 26px;
+    color: var(--object-title);
+}
+.object-item .price-object-item {
+    text-align: left;
+    padding: 2px 0;
+    color: var(--object-title);
+    font-weight: 700;
+}
+.object-item .bio-object-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 0;
+   
+}
+.object-item .bio-object-item span{
+    font-size: 12px;
+    color: var(--object-title);
+}
+.object-item .bio-object-item span:nth-child(2){
+    font-size: 15px;
+   font-family: "Lalezar";
+    color: var(--object-title);
+}
+.btn-object-price{
+    margin: 8px 0;
+}
+
+
+/*start-filter-object */
+@media( min-width:1199px){
+
+
+    .filter-object-item{
+        text-align: right;
+        border: 1px solid var(--border);
+        padding:20px;
+        line-height: 20px;
+        text-decoration: none;
+        box-shadow: 0 0px 1px 1px #e6e6e6;
+        white-space: nowrap;  
+      
+      }
+      .filter-object-item a{
+          text-decoration: none;
+      }
+      
+      .filter-object-item > h5 {
+          margin-bottom: var(--margin-15p);
+          padding: 10px 20px;
+         background-color:  rgba(125, 125, 125, 0.15);
+      }
+      
+      .filter-object-item .filter-object-check {
+              position: relative;
+          font-size: var(--font-size);
+          color: var(--object-title);
+          
+      
+      
+      }
+      
+      .filter-object-item .filter-object-check{
+          margin-bottom: var(--margin-15p);
+          margin-right: var(--margin-15p);
+      }
+      .filter-object-item  .filter-object-check::before{
+      
+          content: "";
+          border: 2px solid var(--border);
+          width: 12px;
+          height: 12px;
+          position:absolute ;
+          right: -15px;
+          bottom:3px ;
+      }
+      .filter-object-list-box{
+          margin-bottom: 0;
+      }
+      .filter-object-list-box .filter-object-list {
+          margin-top: var( --margin-5p);
+          margin-bottom: 0;
+          margin-right: var(--margin-15p);
+          text-decoration: none;
+          color: var(--object-title);
+          line-height: 30px;
+          font-size: var(--font-size);
+      
+      }
+      .filter-object-list-box  .visitable{
+          transition: all .5s ease;
+          
+      }
+      .filter-object-list-box  .visitable:hover {
+         color: var(--blue);
+         transform: translate(-5px,0) scale(1.1);
+      }
+      
+      .visitable:hover {
+          color: var(--blue);
+          transform: translate(-5px,0) scale(1.1);
+       }
+      
+       .filter-object-price-input > input{
+          margin-right: var(--margin-15p);
+          margin-top: var( --margin-5p);
+          border: none !important ;
+          text-align: center;
+         z-index: 300;
+       }
+       
+       .filter-object-price-input input[data-target="price1"]{
+          width: 50%;
+          border: none;
+          border-bottom:1px solid var(--borderbottom) ;
+          align-self: center;
+      
+       }
+       .filter-object-price-input input[data-target="price2"]{
+          width: 50%;
+          border: none;
+          border-bottom:1px solid var(--borderbottom) ;
+          align-self: center;
+          margin: 1px auto;
+       }
+      
+      
+      .filter-object-price-input .lab-1 , .filter-object-price-input .lab-2{
+        
+         display: inline !important ;
+         font-size: small;
+         text-align: right;
+       
+       } 
+       .container-filter {
+        display: none;
+      }
+
+}
+
+@media( max-width:1199px){
+
+    .col-md-collapas{
+      position: fixed;
+      z-index: 502;
+      background-color: rgb(255, 255, 255);
+      top:0;
+      right: 0;
+      height: 100vh;
+      overflow-y: scroll;
+       transition: all .5s ease-in-out;
+      transform: translateX(100%);
+    }
+
+.filter-object-item{
+    text-align: right;
+    border: 1px solid var(--border);
+    padding:20px;
+    line-height: 20px;
+    text-decoration: none;
+    box-shadow: 0 0px 1px 1px #e6e6e6;
+    white-space: nowrap;  
+  
+  }
+  .filter-object-item a{
+      text-decoration: none;
+  }
+  
+  .filter-object-item > h5 {
+      margin-bottom: var(--margin-15p);
+      padding: 10px 20px;
+     background-color:  rgba(125, 125, 125, 0.15);
+  }
+  
+  .filter-object-item .filter-object-check {
+          position: relative;
+      font-size: var(--font-size);
+      color: var(--object-title);
+      
+  
+  
+  }
+  
+  .filter-object-item .filter-object-check{
+      margin-bottom: var(--margin-15p);
+      margin-right: var(--margin-15p);
+  }
+  .filter-object-item  .filter-object-check::before{
+  
+      content: "";
+      border: 2px solid var(--border);
+      width: 12px;
+      height: 12px;
+      position:absolute ;
+      right: -15px;
+      bottom:3px ;
+  }
+  .filter-object-list-box{
+      margin-bottom: 0;
+  }
+  .filter-object-list-box .filter-object-list {
+      margin-top: var( --margin-5p);
+      margin-bottom: 0;
+      margin-right: var(--margin-15p);
+      text-decoration: none;
+      color: var(--object-title);
+      line-height: 30px;
+      font-size: var(--font-size);
+  
+  }
+  .filter-object-list-box  .visitable{
+      transition: all .5s ease;
+      
+  }
+  .filter-object-list-box  .visitable:hover {
+     color: var(--blue);
+     transform: translate(-5px,0) scale(1.1);
+  }
+  
+  .visitable:hover {
+      color: var(--blue);
+      transform: translate(-5px,0) scale(1.1);
+   }
+  
+   .filter-object-price-input > input{
+      margin-right: var(--margin-15p);
+      margin-top: var( --margin-5p);
+      border: none !important ;
+      text-align: center;
+     z-index: 300;
+   }
+   
+   .filter-object-price-input input[data-target="price1"]{
+      width: 50%;
+      border: none;
+      border-bottom:1px solid var(--borderbottom) ;
+      align-self: center;
+  
+   }
+   .filter-object-price-input input[data-target="price2"]{
+      width: 50%;
+      border: none;
+      border-bottom:1px solid var(--borderbottom) ;
+      align-self: center;
+      margin: 1px auto;
+   }
+  
+  
+  .filter-object-price-input .lab-1 , .filter-object-price-input .lab-2{
+    
+     display: inline !important ;
+     font-size: small;
+     text-align: right;
+   
+   } 
+
+   .filter-btn-mob .filter-btn-mob-item a{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    text-decoration: none;
+    position: relative;
+    text-align: center;
+    justify-content: space-evenly;
+   }
+
+.filter-btn-mob .filter-btn-mob-item a:first-child { 
+    margin-right: var(--margin-5p);
+   
+    
+}
+.FilterMenu.active {
+    transform: none;
+   
+    overflow-x:hidden;
+  }
+
+  .container-filter {
+    display: block;
+  }
+
+}

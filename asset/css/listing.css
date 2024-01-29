@@ -1,0 +1,37 @@
+.row .border-h {     font-size: 30px;
+    border-bottom: 1px solid rgba(19, 17, 17, 0.158);
+    padding: 10px;
+
+
+}
+
+.list-icon a{text-decoration: none;}
+.list-icon {transition: all .5s ease;}
+
+.list-icon:hover{
+    box-shadow: rgba(5, 5, 5, 0.1) 0px 10px 50px;
+    border-radius: 20px;
+}
+.list-icon p{ color: black;
+font-size: 14px;
+text-align: center;
+margin-top:10px;
+
+
+}
+.list-icon .img-fit {height: fit-content;}
+
+.custom-list-coutainar-f-color{background-color: rgb(253, 246, 246);
+margin-top: 5rem;;
+background-size: cover;
+border-radius:50px;}
+
+
+
+
+@media (max-width:576px){
+
+    .custom-col-xs-lising { border-radius: 100px !important;
+
+    }
+    }

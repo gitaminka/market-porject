@@ -1,0 +1,47 @@
+
+
+.footer-containr-item{
+      
+    background-color: rgba(226, 225, 225, 0.315);
+
+
+}
+
+
+
+.text-footer-top h4{
+font-family: "Alexandria";
+
+
+
+
+
+
+}
+
+
+
+.backtostart a{
+    font-size: 15px;
+    padding: 11px;
+    float: right;
+    font-weight: bold;
+    margin: 0 27px 12px;
+    background-color: rgb(220,53,69);
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+
+
+.contant-footer-icon .nav-item .nav-link i{
+    font-size: 30px;
+    color:gray;
+}
+
+
+
+ .footer-title-botom{
+margin-top: 60px;
+    font-size: 11px;}

@@ -1,0 +1,29 @@
+.shiping-item{
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+
+}
+.shiping-item a{text-decoration: none;}
+
+.shiping-item p:nth-last-child(1){color: black !important;}
+
+ .bg-sh-custom{background-color: var(--white) ;}
+
+ .shiping-item .icon{ padding: 20px 0 ;
+    border-radius: 5%;}
+
+    .bg-container-sh-custom{background-color: rgb(250, 250, 250);}
+
+
+
+@media (max-width:1199px) {
+
+.cmt-md-5 {
+
+ margin-top: 2rem !important ;}
+
+}
+
+
+
